@@ -93,7 +93,7 @@
 }
 
 .cardWithPic {
-    background-image: url('/img/robot.png');
+    background-image: url('../img/robot.png');
     background-size: cover;
 }
 
