@@ -1,0 +1,97 @@
+@media screen and (max-width: 992px) {
+
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .itemsNavbar{
+        display: block;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .burger {
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 20px;
+        transform: translateY(-50px);
+        margin-right: 20px;
+    }
+
+    .burger::after,
+    .burger::before {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger::before {
+        top: 0;
+    }
+
+    .burger::after {
+        bottom: 0;
+    }
+
+    .burger.active::before {
+        top: 9px;
+        transform: rotate(-45deg);
+    }
+
+    .burger.active::after {
+        bottom: 9px;
+        transform: rotate(45deg);
+    }
+
+    .burger.active span {
+        transform: scale(0);
+    }
+
+    .burger span {
+        position: absolute;
+        background-color: #fff;
+        width: 30px;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .wrapper {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+
+    .content {
+        grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+        padding: 10px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .cartHeader svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+   .card {
+        width: 100%;
+    }
+}
